@@ -19,6 +19,21 @@ console.log(book.pages);  // Output: 281
 // `title` (string), `director` (string), `year` (number)
 // Log each property using dot notation.
 
+let movie = {
+  title: 'Old',
+  director: 'M. Night Shyamalan',
+  year: 2021
+};
+
+console.log("\nTry It 1: Movie Object");
+console.log(movie.title);
+console.log(movie.director);
+console.log(movie.year);
+
+
+
+
+
 
 // Example 2: Creating a Pet Object
 const pet = {
@@ -36,6 +51,21 @@ console.log(pet.age);     // Output: 5
 // Create an object named `city` with the following properties:
 // `name` (string), `population` (number), `country` (string)
 // Log each property using dot notation.
+
+const city = {
+  name: 'Ponchatoula',
+  population: 7783,
+  country: 'USA'
+}
+
+console.log("\nTry It 2: City Object")
+console.log(city.name);
+console.log(city.population);
+console.log(city.country);
+
+
+
+
 
 
 // Example 3: Creating a Car Object
@@ -55,6 +85,21 @@ console.log(car.year);   // Output: 2021
 // `brand` (string), `processor` (string), `ram` (number)
 // Log each property using dot notation.
 
+const computer = {
+  brand: 'Lenovo Yoga',
+  processor: 'Intel Core M',
+  ram: 16
+}
+
+console.log("\nTry It 3: Computer Object")
+console.log(computer.brand);
+console.log(computer.processor);
+console.log(computer.ram);
+
+
+
+
+
 
 // Example 4: Creating a Product Object
 const product = {
@@ -72,6 +117,21 @@ console.log(product.inStock); // Output: true
 // Create an object named `restaurant` with the following properties:
 // `name` (string), `type` (string), `rating` (number)
 // Log each property using dot notation.
+
+const restaurant = {
+  name: 'Bistro Huddy',
+  type: 'American Fine Dining',
+  rating: 5
+}
+
+console.log("\nTry It 4: Restaurant Object")
+console.log(restaurant.name);
+console.log(restaurant.type);
+console.log(restaurant.rating);
+
+
+
+
 
 
 // Example 5: Creating a Student Object
@@ -91,3 +151,13 @@ console.log(student.grade);     // Output: A
 // `address` (string), `size` (number), `hasGarage` (boolean)
 // Log each property using dot notation.
 
+const house = {
+  address: '155 Bernice St',
+  size: 9588,
+  hasGarage: false
+}
+
+console.log("\nTry It 5: Address Object");
+console.log(house.address);
+console.log(house.size);
+console.log(house.hasGarage);
