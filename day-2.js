@@ -26,6 +26,31 @@ console.log(book.pages); // Output: 300
 // Add another method named `updateYear` that updates the `year` property.
 // Use `this` to access and modify the properties.
 
+const movie = {
+  title: 'Mr. Deeds',
+  director: 'Steven Brill',
+  year: 2059,
+
+  watch() {
+    console.log(`You have watched ${this.title} from the year ${this.year}.`);
+  },
+
+  updateYear(newYear) {
+    this.year = newYear;
+  },
+}
+
+console.log("\nTry It 1: Movie Object with Methods");
+movie.watch();
+console.log(movie.year);
+movie.updateYear(2002);
+console.log(movie.year);
+movie.watch();
+
+
+
+
+
 
 // Example 2: Adding Methods to a Pet Object
 const pet = {
@@ -50,6 +75,37 @@ console.log(pet.name);  // Output: Paws
 // Add a method named `addPopulation` that increases the `population` property by a given number.
 // Add another method named `rename` that updates the `name` property using `this`.
 
+const city = {
+  name: 'Norman',
+  pop: 129627,
+  country: 'USA',
+
+  visit() {
+    console.log(`You have visited the city of ${this.name} with the population of ${this.pop} people.`)
+  },
+  addPop() {
+    this.pop += 50
+    console.log(`Fifty (50) more people have been added to ${this.name}.`)
+  },
+  rename(newName) {
+    this.name = newName;
+    console.log(`You have renamed your city to ${newName}.`)
+  }
+}
+console.log("\nTry It 2: City Object with Methods");
+city.visit();
+city.addPop();
+city.addPop();
+city.addPop();
+city.rename('Vanntopia');
+city.addPop();
+city.visit();
+
+
+
+
+
+
 
 // Example 3: Adding Methods to a Car Object
 const car = {
@@ -72,6 +128,26 @@ console.log(car.year); // Output: 2023
 // TODO 3: Add a method to `computer` object
 // Add a method named `upgradeRAM` that updates the `ram` property.
 // Add another method named `describe` that logs a message with the `brand`, `processor`, and `ram` properties.
+
+const computer = {
+  brand: 'Lenovo Yoga',
+  processor: 'Intel Core M',
+  ram: 16,
+
+  upgrade() {
+    ram += 2
+  },
+  describe() {
+    console.log(`This computer is called ${this.brand} has an ${this.processor} processor, and a ${this.ram}gb RAM.`)
+  },
+}
+computer.describe();
+computer.upgrade();
+computer.describe();
+
+
+
+
 
 
  // Example 4: Adding Methods to a Product Object
