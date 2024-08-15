@@ -18,6 +18,21 @@ console.log(defaultBook); // Output: { title: 'The Great Gatsby', author: 'F. Sc
 // - name: 'Buddy'
 // - species: 'Dog'
 // - age: 2
+function createPet() {
+  return {
+    name: 'Buddy',
+    species: 'dog',
+    age: 2,
+  };
+}
+console.log("\nTry it 1: Factory Function with Default Properties");
+const defaultPet = createPet();
+console.log(defaultPet);
+
+
+
+
+
 
 
 // Example 2: Factory Function with Default Properties
@@ -38,6 +53,21 @@ console.log(defaultCar); // Output: { brand: 'Toyota', model: 'Corolla', year: 2
 // - name: 'Springfield'
 // - population: 30000
 // - country: 'USA'
+function createCity() {
+  return {
+    name: 'Springfield',
+    pop: 30000,
+    country: 'USA',
+  };
+}
+console.log("\nTry it 2: Factory Function with Default Properties");
+const defaultCity = createCity();
+console.log(defaultCity); 
+
+
+
+
+
 
 
 // Example 3: Factory Function with Arguments
@@ -58,6 +88,24 @@ console.log(specificBook); // Output: { title: '1984', author: 'George Orwell', 
 // - name
 // - species
 // - age
+function createPetWithDetails(name, species, age) {
+  return {
+    name: name,
+    species: species,
+    age: age,
+  };
+}
+console.log("\nTry it 3: Factory Function with Arguments");
+const pet = createPetWithDetails('Rex', 'dog', 5);
+console.log(pet);
+
+
+
+
+
+
+
+
 
 
 // Example 4: Factory Function with Arguments
@@ -78,6 +126,23 @@ console.log(specificCar); // Output: { brand: 'Tesla', model: 'Model S', year: 2
 // - name
 // - population
 // - country
+function createCityWithDetails(name, population, country) {
+  return {
+    name: name,
+    pop: population,
+    country: country,
+  };
+}
+console.log("\nTry it! 4: Factory Function with Arguments");
+const city = createCityWithDetails('Brighton', 2881, 'USA');
+console.log(city)
+
+
+
+
+
+
+
 
 
 // Example 5: Factory Function with Method
@@ -104,3 +169,25 @@ myPet.celebrateBirthday(); // Output: Happy Birthday Bella! You are now 5 years 
 // - country
 // Add a method named `changePopulation` that takes a number as an argument and updates the `population` property.
 
+function createCityWithMethod(name, population, country) {
+  return {
+    name: name,
+    pop: population,
+    country: country,
+
+    changePop() {
+      this.pop += 69
+      console.log(`The population is now at ${this.pop} people.`)
+    }
+  };
+}
+
+console.log("\nTry it! 5: Factory Function with Method");
+const myCity = createCityWithMethod('Atoka', 10464, 'USA')
+console.log(myCity)
+myCity.changePop()
+console.log(myCity)
+myCity.changePop()
+console.log(myCity)
+myCity.changePop()
+console.log(myCity)
